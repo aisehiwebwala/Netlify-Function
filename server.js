@@ -10,6 +10,7 @@ const api = require("./src/api");
 app.use("/api", api);
 
 app.get("/", (req, res) => {
+  console.log("Request Recieved at : ",new Date().toString());
   res.send("Hello Dunia!");
 });
 
