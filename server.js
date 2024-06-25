@@ -11,7 +11,7 @@ app.use("/api", api);
 
 app.get("/", (req, res) => {
   try{
-  console.log("Request Recieved at : ",new Date().toISOString()," from ",req.get("host");
+  console.log("Request Recieved at : ",new Date().toISOString()," from ",req.get("host"));
   } catch(error){
     console.log({error:error.message});
   }
