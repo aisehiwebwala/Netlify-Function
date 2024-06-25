@@ -11,7 +11,7 @@ app.use("/api", api);
 
 app.get("/", (req, res) => {
   try{
-  console.log("Request Recieved at : ",new Date().toISOString()," from ",req.headers);
+  console.log("Request Recieved at : ",new Date().toLocaleString()," from ",req.headers);
   } catch(error){
     console.log({error:error.message});
   }
