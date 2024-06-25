@@ -10,7 +10,11 @@ const api = require("./src/api");
 app.use("/api", api);
 
 app.get("/", (req, res) => {
+  try{
   console.log("Request Recieved at : ",new Date().toISOString()," from ",req.get("host");
+  } catch(error){
+    console.log({error:error.message});
+  }
   res.send("Hello Dunia!");
 });
 
